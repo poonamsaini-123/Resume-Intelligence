@@ -1,8 +1,8 @@
 **Problem Statement: AI-powered Resume Intelligence & Career Guidance**
 
-ExamOS AI is an intelligent resume analysis platform that transforms traditional resumes into actionable career insights using AI.
+Resume-Intelligence is an intelligent resume analysis platform that transforms traditional resumes into actionable career insights using AI.
 
-# 🚀 ExamOS AI – Intelligent Resume Analyzer
+# 🚀 Intelligent Resume Analyzer
 
 > AI-powered Resume Analysis Platform built using **FastAPI**, **Lemma AI**, and **Python** to provide detailed resume insights, ATS evaluation, skill extraction, interview preparation, and personalized career guidance.
 
@@ -17,7 +17,7 @@ ExamOS AI is an intelligent resume analysis platform that transforms traditional
 
 Recruiters spend only a few seconds reviewing each resume.
 
-**ExamOS AI** helps students and job seekers instantly understand how strong their resume is by generating an AI-powered analysis.
+**Resume-Intelligence** helps students and job seekers instantly understand how strong their resume is by generating an AI-powered analysis.
 
 The system extracts resume content from a PDF, analyzes it using an AI agent, and produces an easy-to-understand report including:
 
@@ -64,7 +64,7 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 7. The front## Project Structure
 
 ```
-ExamOS-AI/
+Resume-Intelligence/
 │
 ├── agents/
 │   └── examos-agent/
@@ -187,7 +187,7 @@ https://www.linkedin.com/in/poonam-saini-986058340
 
 ---
 
-# 🌟 Why ExamOS AI?
+# 🌟 Why Resume-Intelligence?
 
 Unlike a simple PDF parser, ExamOS AI combines document processing with AI-powered reasoning to provide actionable career insights.
 

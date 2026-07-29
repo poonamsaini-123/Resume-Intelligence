@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ExamOS AI</title>
-    <style>
-        body{
-            font-family: Arial;
-            width:700px;
-            margin:40px auto;
-        }
-
-        button{
-            padding:10px 20px;
-            cursor:pointer;
-        }
-
-        pre{
-            margin-top:20px;
-            padding:15px;
-            background:#f4f4f4;
-            white-space:pre-wrap;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume-Intelligence</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316211C'/%3E%3Cpath d='M9 8h10l4 4v12H9z' fill='none' stroke='%23EEF1EE' stroke-width='1.6'/%3E%3Cpath d='M19 8v4h4' fill='none' stroke='%23EEF1EE' stroke-width='1.6'/%3E%3Cpath d='M11.5 17h9M11.5 20h9M11.5 14h5' stroke='%231F7A5C' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>📘 ExamOS AI</h1>
+<div class="page">
 
-<input type="file" id="pdf" accept=".pdf">
+  <header class="masthead">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="var(--ink)"/>
+        <path d="M9 8h10l4 4v12H9z" fill="none" stroke="var(--paper)" stroke-width="1.6"/>
+        <path d="M19 8v4h4" fill="none" stroke="var(--paper)" stroke-width="1.6"/>
+        <path d="M11.5 17h9M11.5 20h9M11.5 14h5" stroke="var(--accent-pass)" stroke-width="1.6"/>
+      </svg>
+      <span class="brand-eyebrow">RESUME INTELLIGENCE</span>
+    </div>
+    <h1 class="headline">Resume <em>Intelligence</em></h1>
+    <p class="subhead">Upload any resume — get an ATS score, skill‑gap report, and a personalized roadmap in under a minute.</p>
+  </header>
 
-<br><br>
+  <section class="upload-card" aria-label="Upload resume">
+    <div class="upload-row">
+      <label class="file-picker">
+        <input type="file" id="pdf" accept=".pdf">
+        <span id="file-label">Choose PDF resume</span>
+      </label>
+      <button id="btn" class="btn-primary">Analyze Resume</button>
+    </div>
+    <p class="upload-hint">PDF only · processed locally by your own backend · nothing is stored beyond this session</p>
+  </section>
 
-<button id="btn">Analyze PDF</button>
+  <main id="output" class="results" aria-live="polite"></main>
 
-<pre id="output"></pre>
+  <footer class="sitefoot">
+    <span>Resume-Intelligence</span><span class="dot">·</span><span>FastAPI + Gemini/Lemma agent</span>
+  </footer>
+
+</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
