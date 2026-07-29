@@ -1,6 +1,6 @@
 {
-  "name": "examos-agent",
-  "description": "AI Resume Analyzer for ExamOS AI",
+  "name": "resume-intelligence-agent",
+  "description": "AI Resume Analyzer for Resume Intelligence",
   "instruction": {
      "$file": "instruction.md" },
   
