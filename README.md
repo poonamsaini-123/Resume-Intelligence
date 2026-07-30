@@ -2,10 +2,9 @@
 
 Resume-Intelligence is an intelligent resume analysis platform that transforms traditional resumes into actionable career insights using AI.
 
-# 🚀 Intelligent Resume Analyzer
+# 🚀 Resume-Intelligence = Intelligent Resume Analyzer
 
-> AI-powered Resume Analysis Platform built using **FastAPI**, **Lemma AI**, and **Python** to provide detailed resume insights, ATS evaluation, skill extraction, interview preparation, and personalized career guidance.
-
+> AI-powered Resume Analyzer built with FastAPI, Gemini AI and Lemma. Generates ATS score, skill-gap analysis and personalized career recommendations from PDF resumes.
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
 ![AI](https://img.shields.io/badge/Lemma-AI-purple)
@@ -37,6 +36,8 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 
 ✅ Automatic Text Extraction
 
+✅ Resume Detection
+
 ✅ AI-Powered Resume Analysis
 
 ✅ ATS Score Calculation
@@ -48,6 +49,12 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 ✅ Resume Improvement Suggestions
 
 ✅ Personalized Learning Roadmap
+
+✅ FastAPI Backend
+
+✅ Gemini AI Integration
+
+✅ Lemma Agent Integration
 
 ## Architecture Diagram
 
@@ -67,8 +74,8 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 Resume-Intelligence/
 │
 ├── agents/
-│   └── examos-agent/
-│       ├── examos-agent.json
+│   └── resume-intelligence-agent/
+│       ├── resume-intelligence-agent.json
 │       └── instruction.md
 │
 ├── backend/
@@ -94,13 +101,13 @@ Resume-Intelligence/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ExamOS-AI.git
+git clone https://github.com/YOUR_USERNAME/Resume-Intelligence.git
 ```
 
 Move into project
 
 ```bash
-cd ExamOS-AI
+cd Resume-Intelligence
 ```
 
 Install dependencies
@@ -160,16 +167,15 @@ The API returns structured JSON similar to:
 
 # 💡 Future Improvements
 
-- DOCX Support
-- Multiple Resume Templates
-- Resume Comparison
-- Company-specific ATS Analysis
-- Cover Letter Generator
-- LinkedIn Profile Analysis
+- Resume comparison
 - Job Description Matching
-- AI Chat Assistant
-- Resume Ranking System
-- Interactive Dashboard
+- Interview Question Generator
+- Resume Ranking
+- Multiple Resume Upload
+- LinkedIn Profile Analysis
+- Dark Mode
+- Download PDF Report
+
 
 ------# 👩‍💻 Developed By
 
@@ -189,7 +195,7 @@ https://www.linkedin.com/in/poonam-saini-986058340
 
 # 🌟 Why Resume-Intelligence?
 
-Unlike a simple PDF parser, ExamOS AI combines document processing with AI-powered reasoning to provide actionable career insights.
+Unlike a simple PDF parser, Resume-Intelligence combines document processing with AI-powered reasoning to provide actionable career insights.
 
 It not only extracts resume information but also helps users understand:
 

@@ -4,16 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume-Intelligence</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316211C'/%3E%3Cpath d='M9 8h10l4 4v12H9z' fill='none' stroke='%23EEF1EE' stroke-width='1.6'/%3E%3Cpath d='M19 8v4h4' fill='none' stroke='%23EEF1EE' stroke-width='1.6'/%3E%3Cpath d='M11.5 17h9M11.5 20h9M11.5 14h5' stroke='%231F7A5C' stroke-width='1.6'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316211C'/%3E%3Cpath d='M9 8h10l4 4v12H9z' fill='none' stroke='%23EEF1EE' stroke-width='1.6'/%3E%3Cpath d='M19 8v4h4' fill='none' stroke='%23EEF1EE' stroke-width='1.6'/%3E%3Cpath d='M11.5 17h9M11.5 20h9M11.5 14h5' stroke='%231F7A5C' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="page">
 
+  <!-- Hero & Branding Header Section -->
   <header class="masthead">
     <div class="brand">
       <svg class="brand-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
@@ -24,25 +25,54 @@
       </svg>
       <span class="brand-eyebrow">RESUME INTELLIGENCE</span>
     </div>
+    
     <h1 class="headline">Resume <em>Intelligence</em></h1>
-    <p class="subhead">Upload any resume — get an ATS score, skill‑gap report, and a personalized roadmap in under a minute.</p>
+    <p class="subhead">AI-Powered Resume Analysis & ATS Optimization</p>
+
+    <!-- Value Proposition Checklist Container -->
+    <div class="hero-features" style="margin-top: 1.5rem; text-align: left; max-width: 450px; margin-left: auto; margin-right: auto;">
+        <p class="upload-text" style="font-family: var(--font-sans, 'IBM Plex Sans'), sans-serif; font-weight: 500; margin-bottom: 0.75rem;">Upload your resume and receive:</p>
+        <ul class="feature-list" style="list-style: none; padding-left: 0; margin-bottom: 0.75rem; line-height: 1.6;">
+            <li>✔ ATS Compatibility Score</li>
+            <li>✔ Skill Gap Analysis</li>
+            <li>✔ Resume Improvement Suggestions</li>
+            <li>✔ Personalized Learning Roadmap</li>
+            <li>✔ AI-Powered Career Insights</li>
+        </ul>
+        <span class="time-badge" style="font-family: var(--font-mono, 'IBM Plex Mono'), monospace; font-size: 0.85rem; opacity: 0.8;">in under 60 seconds.</span>
+    </div>
   </header>
 
+  <!-- Upload Action Card Section -->
   <section class="upload-card" aria-label="Upload resume">
     <div class="upload-row">
       <label class="file-picker">
         <input type="file" id="pdf" accept=".pdf">
         <span id="file-label">Choose PDF resume</span>
       </label>
-      <button id="btn" class="btn-primary">Analyze Resume</button>
+      <button id="btn" class="btn-primary">Analyze with AI</button>
     </div>
     <p class="upload-hint">PDF only · processed locally by your own backend · nothing is stored beyond this session</p>
   </section>
 
+  <!-- Output Processing Display Container -->
   <main id="output" class="results" aria-live="polite"></main>
 
-  <footer class="sitefoot">
-    <span>Resume-Intelligence</span><span class="dot">·</span><span>FastAPI + Gemini/Lemma agent</span>
+  <!-- Modernised Stack Footer -->
+  <footer class="sitefoot" style="display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center; padding: 2rem 1rem; opacity: 0.85;">
+    <div class="footer-title" style="font-family: var(--font-sans, 'IBM Plex Sans'), sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;">
+      Resume Intelligence
+    </div>
+    <div class="footer-tech-stack" style="font-family: var(--font-mono, 'IBM Plex Mono'), monospace; font-size: 0.8rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 0.6rem; max-width: 600px;">
+      <span style="opacity: 0.6;">Powered by:</span>
+      <span>FastAPI</span><span class="dot" style="opacity: 0.4;">·</span>
+      <span>Gemini AI</span><span class="dot" style="opacity: 0.4;">·</span>
+      <span>Python</span><span class="dot" style="opacity: 0.4;">·</span>
+      <span>Lemma AI</span><span class="dot" style="opacity: 0.4;">·</span>
+      <span>HTML</span><span class="dot" style="opacity: 0.4;">·</span>
+      <span>CSS</span><span class="dot" style="opacity: 0.4;">·</span>
+      <span>JavaScript</span>
+    </div>
   </footer>
 
 </div>

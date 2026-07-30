@@ -338,3 +338,150 @@ body{
   .upload-row{ flex-direction:column; }
   .btn-primary{ padding:12px; }
 }
+
+.summary-card{
+    margin-top:35px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px;
+    box-shadow:var(--shadow);
+}
+
+.summary-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.summary-header h2{
+    margin:0;
+    font-family:'Fraunces',serif;
+}
+
+.stars{
+    color:#fbbf24;
+    font-size:22px;
+}
+
+.summary-status{
+    margin-top:20px;
+}
+
+.summary-status h3{
+    margin:0;
+    color:var(--accent-pass);
+}
+
+.summary-status p{
+    margin-top:6px;
+    color:#666;
+}
+
+.best-for{
+    margin-top:24px;
+}
+
+.role-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.role-tags span{
+    background:#eef8f2;
+    color:#1f7a5c;
+    padding:8px 15px;
+    border-radius:999px;
+    font-size:13px;
+}
+
+.report-section{
+    margin-top:30px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+    background:white;
+}
+
+.report-section summary{
+    cursor:pointer;
+    padding:18px 22px;
+    font-weight:600;
+    font-size:17px;
+    background:#f7faf8;
+}
+
+.report-section summary:hover{
+    background:#eef5f1;
+}
+
+.report-section[open] summary{
+    border-bottom:1px solid var(--line);
+}
+
+.report-actions{
+    margin-top:35px;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.report-actions button{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:var(--accent-pass);
+    color:white;
+
+    border:none;
+
+    padding:14px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.report-actions button:hover{
+
+    transform:translateY(-2px);
+
+    background:#16684c;
+
+    box-shadow:0 8px 18px rgba(31,122,92,.25);
+
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:16px;
+    margin:24px 0;
+}
+
+.stat{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stat h4{
+    font-size:28px;
+    margin:0;
+    color:#1f7a5c;
+}
+
+.stat p{
+    margin-top:8px;
+    color:#666;
+    font-size:14px;
+}

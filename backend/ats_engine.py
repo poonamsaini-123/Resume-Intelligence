@@ -18,13 +18,13 @@ def extract_skills(text):
 def generate_suggestions(found, missing, score):
     suggestions = []
     if score < 60:
-        suggestions.append("Resume ka overall keyword match kam hai, job description ke hisaab se relevant skills add karo.")
+        suggestions.append("Improve your resume by adding more job-relevant keywords and tailoring it to the target role.")
     if missing:
-        suggestions.append(f"Ye skills add karne se ATS score badh sakta hai: {', '.join(missing[:3])}.")
+        suggestions.append(f"Consider adding the following skills if you have practical experience: {', '.join(missing[:3])}.")
     if len(found) < 5:
-        suggestions.append("Projects/Experience section mein tools aur technologies clearly mention karo.")
+        suggestions.append("Include more technical skills, tools, and technologies in your Projects or Experience section.")
     if not suggestions:
-        suggestions.append("Resume achi tarah optimized hai, minor formatting hi check kar lo.")
+        suggestions.append("Your resume is well structured. Review formatting and grammar before submitting applications.")
     return suggestions
 
 

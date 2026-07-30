@@ -24,7 +24,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.get("/")
 def home():
-    return {"message": "Welcome to ExamOS AI 🚀"}
+    return {"message": "Welcome to Resume-Intelligence 🚀"}
 
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
