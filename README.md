@@ -10,7 +10,10 @@ Resume-Intelligence is an intelligent resume analysis platform that transforms t
 ![AI](https://img.shields.io/badge/Lemma-AI-purple)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+> **Upload a PDF resume and instantly receive an AI-generated ATS score, extracted skills, skill-gap analysis, resume improvement suggestions, interview questions, and personalized career recommendations.**
+
 ---
+
 
 # 📖 Overview
 
@@ -48,6 +51,8 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 
 ✅ Resume Improvement Suggestions
 
+✅ Interview Question Generation
+
 ✅ Personalized Learning Roadmap
 
 ✅ FastAPI Backend
@@ -56,7 +61,23 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 
 ✅ Lemma Agent Integration
 
-## Architecture Diagram
+
+
+## 📸 Screenshots
+
+### Home Page
+![Home](images/home.png)
+
+
+### Resume Upload & AI Analysis
+![Upload and Analysis](images/loading.png)
+
+### ATS Report
+![Report](images/report.png)
+
+
+
+# 🏗️ Architecture Diagram
 
 ![Architecture](images/architecture-diagram.png)
 
@@ -68,7 +89,10 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 4. ATS Engine calculates the ATS score and extracts skills.
 5. Gemini AI Service generates detailed AI-powered resume analysis.
 6. FastAPI combines all results into a JSON response.
-7. The front## Project Structure
+7. The frontend displays the ATS score, extracted skills, missing skills, suggestions, interview questions, and AI analysis.
+
+
+# 📂 Project Structure
 
 ```
 Resume-Intelligence/
@@ -90,18 +114,20 @@ Resume-Intelligence/
 │   ├── script.js
 │   └── style.css
 │
-├── .gitignore
+├── images/
 ├── LICENSE
 ├── README.md
-└── requirements.txt
-```end displays the ATS score, skills, missing skills, suggestions, and AI analysis.
+├── requirements.txt
+└── .gitignore
+
+```
 
 # ⚙ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Resume-Intelligence.git
+git clone https://github.com/poonamsaini-123/Resume-Intelligence.git
 ```
 
 Move into project
@@ -168,16 +194,16 @@ The API returns structured JSON similar to:
 # 💡 Future Improvements
 
 - Resume comparison
-- Job Description Matching
-- Interview Question Generator
 - Resume Ranking
 - Multiple Resume Upload
 - LinkedIn Profile Analysis
 - Dark Mode
-- Download PDF Report
+- AI-powered Resume Rewrite
+- Multi-language Resume Support
+- Recruiter Dashboard
 
 
-------# 👩‍💻 Developed By
+# 👩‍💻 Developed By
 
 **Poonam Saini**
 
@@ -185,11 +211,9 @@ B.Tech CSE (AI/ML)
 
 Rayat Bahra University
 
-GitHub:
-https://github.com/poonamsaini-123
+**GitHub:** <https://github.com/poonamsaini-123>
 
-LinkedIn:
-https://www.linkedin.com/in/poonam-saini-986058340
+**LinkedIn:** <https://www.linkedin.com/in/poonam-saini-986058340>
 
 ---
 
@@ -212,4 +236,4 @@ This transforms a static resume into an intelligent career guidance report.
 # 📄 License
 
 This project is licensed under the MIT License.
-✅ Interview Question Generation
+
